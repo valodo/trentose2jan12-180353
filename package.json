@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true
+  }
+}
