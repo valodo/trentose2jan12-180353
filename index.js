@@ -34,14 +34,14 @@ app.get('/getArea', function(req, res){
     res.setHeader('Content-Type', 'application/json');
     
     
-    var side1 = req.query.side1;
-    var side2 = req.query.side2;
-    
+    var side1 = parseInt(req.query.side1);
+    var side2 = parseInt(req.query.side2);
     
     console.log(side1);
     console.log(side2);
     
     var input = [side1, side2];
+    
     
     var result = area(input);
     
@@ -66,7 +66,7 @@ app.get('/getArea?side1=?&side2=?', function(req, res){
     
     res.setHeader('Content-Type', 'application/json');
     
-    
+
     var side1 = parseInt(req.query.side1);
     var side2 = parseInt(req.query.side2);
     
